@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.hover-effect {
+  @apply cursor-pointer transform hover:scale-103 transition-transform duration-200 ease-out;
+}

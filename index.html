@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- website title -->
+    <title>EmailGigga</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <!-- tailwind css -->
+    <link href="./styles/output.css" rel="stylesheet" />
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/b6d1c08c2a.js" crossorigin="anonymous"></script>
+    <!-- font inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+    <!-- font sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <!-- font plus-jakarta-sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 6rem;
+      }
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+      .font-sora {
+        font-family: "Sora", sans-serif;
+      }
+      .font-jakarta-sans {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+      #homeSection,
+      #featuresSection,
+      #pricingSection,
+      #blogSection,
+      #aboutUsSection,
+      #contactSection {
+        scroll-margin-top: 6rem;
+      }
+    </style>
+
+    <!-- scripts -->
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body class="font-inter">
+    <header class="bg-[#0B150F]">
+      <!-- navbar section -->
+      <section class="backdrop-blur-2xl fixed top-0 left-0 z-1000 w-full px-10 lg:px-0 bg-[#0B150F]">
+        <nav class="container mx-auto flex justify-between items-center py-3 lg:py-4 shadow-4xl">
+          <a href="#homeSection">
+            <div class="flex items-center gap-2">
+              <img src="./assets/favicon.png" alt="Company Logo" class="w-10" />
+              <p class="inter text-lg font-semibold leading-8 text-white">EmailGigga</p>
+            </div>
+          </a>
+
+          <div class="flex items-center gap-12">
+            <div class="hidden lg:block">
+              <ul class="flex items-center gap-16 text-white">
+                <li class="list-none hover-effect"><a href="#featuresSection" class="text-lg font-light leading-8 text-white">Featues</a></li>
+                <li class="list-none hover-effect"><a href="#pricingSection" class="text-lg font-light leading-8 text-white">Pricing</a></li>
+                <li class="list-none hover-effect"><a href="#blogSection" class="text-lg font-light leading-8 text-white">Blog</a></li>
+                <li class="list-none hover-effect"><a href="#aboutUsSection" class="text-lg font-light leading-8 text-white">About us</a></li>
+                <li class="list-none hover-effect"><a href="#contactSection" class="text-lg font-light leading-8 text-white">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="hidden lg:block">
+              <div class="flex gap-6 items-center">
+                <a href="#loginSection">
+                  <button class="text-xl border border-gray-200 rounded-3xl px-7 py-2 text-white cursor-pointer">Log in</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="block lg:hidden">
+            <button>
+              <i class="fa-solid fa-bars text-3xl text-white mt-2 hover-effect"></i>
+            </button>
+
+            <div class="lg:hidden">
+              <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-[#0B150F] shadow-lg py-4">
+                <div class="container mx-auto flex flex-col gap-4">
+                  <a href="#featuresSection" class="text-lg font-light leading-8 text-white hover:text-white px-4 py-2">Featues</a>
+                  <a href="#pricingSection" class="text-lg font-light leading-8 text-white hover:text-white px-4 py-2">Pricing</a>
+                  <a href="#blogSection" class="text-lg font-light leading-8 text-white hover:text-white px-4 py-2">Blog</a>
+                  <a href="#aboutUsSection" class="text-lg font-light leading-8 text-white hover:text-white px-4 py-2">About us</a>
+                  <a href="#contactSection" class="text-lg font-light leading-8 text-white hover:text-white px-4 py-2">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <hr class="border border-gray-700 opacity-50" />
+      </section>
+
+      <section id="homeSection" class="mt-15 lg:mt-18 container mx-auto flex flex-col">
+        <div class="mt-20">
+          <div class="flex gap-6 items-center justify-center">
+            <p class="bg-[#2F872D40] rounded-3xl px-5 py-1 text-center text-white text-base font-light leading-8 hover-effect">⭐️⭐️⭐️⭐️⭐️ ️ Review from 7,000 customer</p>
+            <p class="bg-[#2F872D40] rounded-3xl px-5 py-1 text-center text-white text-base font-light leading-8 hover-effect">🎉 We reach 12,000 active user</p>
+          </div>
+          <div class="mt-12 flex flex-col items-center justify-center relative">
+            <p class="text-white text-center text-5xl font-bold leading-[63px] font-sora">Power Your Email Marketing</p>
+            <p class="text-white text-center text-5xl font-bold leading-[63px] font-sora">Campaigns with <span class="text-green-500">Ease</span> and <span class="text-green-500">Efficiency</span></p>
+
+            <p class="mt-11 text-center text-white/70 w-1/2 text-lg font-normal leading-8">
+              Are you ready to supercharge your email marketing efforts and unlock the true potential of your campaigns? Look no further than EmailGigga, the all-in-one solution for businesses of all sizes seeking to engage their audience, boost
+              conversions, and build lasting customer relationships.
+            </p>
+
+            <div class="mt-30 text-white text-center flex gap-6">
+              <button class="bg-[#2F872D] text-xl rounded-full px-10 py-5 text-white hover-effect">Get Started</button>
+              <button class="text-xl border border-gray-200 rounded-full px-10 py-5 text-white hover-effect">Watch Video</button>
+            </div>
+
+            <div class="mt-30">
+              <img src="./assets/hero-image.png" alt="Hero Image" class="max-w-250" />
+            </div>
+
+            <div class="flex gap-2 items-center bg-[#2A4527] text-xl rounded-full px-2 py-1 text-white hover-effect absolute top-0 right-0 transform -translate-x-1/2 -translate-y-1/2 z-10">
+              <img src="./assets/mailchimp-monkey.png" alt="" class="w-10" />
+              <span class="text-white text-base font-normal leading-8 text-center">Mailchimp</span>
+            </div>
+            <div class="hover-effect absolute top-35 left-40 transform -translate-x-1/2 translate-y-1/2 z-10">
+              <img src="./assets/woo.png" alt="" class="w-30" />
+            </div>
+            <div class="hover-effect absolute top-50 right-15 transform -translate-x-1/2 translate-y-1/2 z-10">
+              <img src="./assets/canva.png" alt="" class="w-20 bg-yellow-300/90 rounded-full" />
+            </div>
+          </div>
+
+          <div class="mt-50 flex flex-col items-center justify-center mb-30">
+            <p class="text-center text-[#909090] text-lg font-normal leading-8 uppercase">BRANDS THAT TRUSTED US</p>
+            <div class="mt-10 flex items-center gap-20">
+              <img src="./assets/brands-amazon.png" alt="" class="w-50" />
+              <img src="./assets/brands-facebook.png" alt="" class="w-50" />
+              <img src="./assets/brands-google.png" alt="" class="w-50" />
+              <img src="./assets/brands-netflix.png" alt="" class="w-50" />
+              <img src="./assets/brands-spotify.png" alt="" class="w-50" />
+              <img src="./assets/brands-last.png" alt="" class="w-50" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="">
+      <section id="aboutUsSection" class="container mx-auto mt-50 flex flex-col items-center justify-center">
+        <span class="uppercase text-center text-[#2F872D] bg-[#96EF7626] rounded-full px-3 text-base font-normal leading-8">GET STARTED IN MINUTE</span>
+        <p class="mt-10 text-center text-4xl w-4/7 font-semibold leading-[63px]">Revolutionize Your Email Marketing Campaigns with Global Benefits</p>
+
+        <div class="mt-50 grid grid-cols-3 gap-5">
+          <div class="bg-[#F7F7F7] rounded-xl p-8 flex flex-col gap-5">
+            <h2 class="text-2xl font-bold leading-12">Global benefits</h2>
+            <p class="text-lg font-normal leading-6">One place to start, manage and scale your benefits globally</p>
+            <div class="flex flex-col gap-5">
+              <div class="bg-[#205552] rounded-full px-4 py-3">
+                <span class="text-white text-base font-normal leading-8">Email collection</span>
+              </div>
+              <div class="bg-[#7848DF] rounded-full px-4 py-3">
+                <span class="text-white text-base font-normal leading-8">Efficiency</span>
+              </div>
+              <div class="bg-[#EC8B66] rounded-full px-4 py-3">
+                <span class="text-white text-base font-normal leading-8"> Campaign </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-[#F7F7F7] rounded-xl p-8 flex flex-col gap-10 items-center">
+            <div class="flex flex-col gap-5">
+              <h2 class="text-2xl font-bold leading-12">Automated</h2>
+              <p class="text-lg font-normal leading-6">Sync your HR tools and watch your benefits work on autopilot</p>
+            </div>
+            <img src="./assets/automated-image.png" alt="" class="w-90" />
+          </div>
+          <div class="bg-[#F7F7F7] rounded-xl p-8 flex flex-col gap-8 items-center">
+            <div class="flex flex-col gap-5">
+              <h2 class="text-2xl font-bold leading-12">Efficiency</h2>
+              <p class="text-lg font-normal leading-6">Meet your auto-enrol pension requirements in the UK and Ireland</p>
+            </div>
+            <img src="./assets/efficiency-progress-image.png" alt="" class="w-60" />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-5 mt-5">
+          <div class="bg-[#F7F7F7] rounded-xl p-8 flex flex-col gap-5">
+            <h2 class="text-2xl font-bold leading-12">Affordability</h2>
+            <p class="text-lg font-normal leading-6">Control spend, remove reporting admin, and say goodbye to broker fees</p>
+            <img src="./assets/affordability-image.png" alt="" />
+          </div>
+          <div class="bg-[#F7F7F7] rounded-xl p-8 flex flex-col gap-5">
+            <h2 class="text-2xl font-bold leading-12">All-in-one Place</h2>
+            <p class="text-lg font-normal leading-6">Manage policies from multiple providers in one single platform</p>
+            <img src="./assets/all-in-one-image.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="flex container mx-auto mt-50">
+        <div class="w-[50%]">
+          <img src="./assets/increase-sales-banner-image.png" alt="" />
+        </div>
+        <div class="w-[50%] p-30 bg-[#43A11B] flex flex-col justify-between">
+          <div>
+            <span class="text-center text-[#479644] bg-[#EDFFED] rounded-full px-3 text-base font-normal leading-8">CRM sales marketing</span>
+            <p class="text-4xl font-semibold leading-12 text-white">Increase your sales via email marketing</p>
+          </div>
+
+          <div class="flex gap-5">
+            <div class="flex flex-col gap-5">
+              <p class="text-white text-5xl">34%</p>
+              <p class="text-white">Engage your audience on a whole new level with personalized emails tailored to their interests and behaviors.</p>
+            </div>
+            <div class="flex flex-col gap-5">
+              <p class="text-white text-5xl">50K</p>
+              <p class="text-white">platform is designed to empower you with the tools and features you need to succeed.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- features section -->
+      <section class="bg-black">
+        <section class="container mx-auto py-50 flex flex-col items-center justify-center text-white">
+          <p class="text-4xl font-semibold leading-12 text-center">Lots of extra features, included with all services</p>
+          <p class="text-lg font-normal leading-8 text-center">
+            With our automated email solutions, you can say goodbye to tedious manual tasks and hello to efficiency and productivity. Our platform empowers you to automate every aspect of your email workflow
+          </p>
+          <div class="flex flex-col justify-center items-center mt-8 lg:mt-12">
+            <div class="grid grid-cols-3 justify-center items-center gap-6">
+              <div class="bg-[#0B0B0B] rounded-xl flex flex-col justify-center items-center gap-6 p-6">
+                <h2 class="text-xl lg:text-2xl font-semibold leading-[25px] lg:leading-[30px] text-[#96EF76]">Advanced Automation</h2>
+                <p class="text-base lg:text-lg font-light px-8 text-center leading-[20px] lg:leading-[25px] text-white">
+                  Say goodbye to manual tasks and hello to efficiency! Our robust automation features allow you to automate every aspect of your email.
+                </p>
+                <div>
+                  <img src="./assets/automation-image.png" alt="" class="w-50" />
+                </div>
+              </div>
+              <div class="bg-[#0B0B0B] rounded-xl flex flex-col justify-center items-center gap-6 p-6">
+                <h2 class="text-xl lg:text-2xl font-semibold leading-[25px] lg:leading-[30px] text-[#96EF76]">Dynamic Personalization</h2>
+                <p class="text-base lg:text-lg font-light px-8 text-center leading-[20px] lg:leading-[25px] text-white">Engage your audience like never before with personalized emails tailored to their interests, behaviors, and preferences.</p>
+                <div>
+                  <img src="./assets/personalization-image.png" alt="" class="w-50" />
+                </div>
+              </div>
+              <div class="bg-[#0B0B0B] rounded-xl flex flex-col justify-center items-center gap-6 p-6">
+                <h2 class="text-xl lg:text-2xl font-semibold leading-[25px] lg:leading-[30px] text-[#96EF76]">Powerful Analytics</h2>
+                <p class="text-base lg:text-lg font-light px-8 text-center leading-[20px] lg:leading-[25px] text-white">Knowledge is power! Gain valuable insights into the performance of your email campaigns with our powerful analytics tools.</p>
+                <div>
+                  <img src="./assets/analytics-image.png" alt="" class="w-50" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="container mx-auto mt-50 flex">
+        <div class="w-[50%]">
+          <div>
+            <span class="text-center text-[#479644] bg-[#EDFFED] rounded-full px-3 text-base font-normal leading-8">CRM sales marketing</span>
+            <p class="text-4xl font-semibold leading-12 text-white">Increase your sales via email marketing</p>
+          </div>
+          <div class="flex gap-5">
+            <img src="./assets/copy-paste-icon.png" alt="" class="w-10 h-10" />
+            <div>
+              <p>Simply Copy & Paste</p>
+              <span>Use limited-time offers or exclusive deals to prompt immediate action.</span>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <img src="./assets/optimize-icon.png" alt="" class="w-10 h-10" />
+            <div>
+              <p>Optimize for Mobile</p>
+              <span>Ensure emails are mobile-friendly to reach customers on-the-go</span>
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <img src="./assets/test-icon.png" alt="" class="w-10 h-10" />
+            <div>
+              <p>Test and Iterate</p>
+              <span>Continuously test different strategies and analyze results to refine your approach.</span>
+            </div>
+          </div>
+        </div>
+        <div class="w-[50%]">
+          <img src="./assets/cms-image.png" alt="" />
+        </div>
+      </section>
+
+      <section class="container mx-auto mt-50 flex">
+        <div class="w-[50%]">
+          <img src="./assets/compare-image.png" alt="" />
+        </div>
+        <div class="w-[50%]">
+          <span class="text-center text-[#479644] bg-[#EDFFED] rounded-full px-3 text-base font-normal leading-8">LOCAL BENCHMARK</span>
+          <p class="text-4xl font-semibold leading-12 text-white">Compare against the market</p>
+          <p class="text-4xl font-semibold leading-12 text-white">Easily benchmark against local companies and create packages based on market data</p>
+          <div>
+            <div class="flex gap-5">
+              <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+              <p>Analyse benefits package based on market data</p>
+            </div>
+            <div class="flex gap-5">
+              <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+              <p>Compare your benefits directly against the market</p>
+            </div>
+            <div class="flex gap-5">
+              <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+              <p>Design a package that meets employee expectations</p>
+            </div>
+            <div class="flex gap-5">
+              <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+              <p>Design a package that meets employee expectations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- best apps section -->
+      <section class="container mx-auto py-50 flex flex-col justify-center items-center gap-5">
+        <p class="text-4xl font-semibold leading-12 text-center">Seamless integration to all your best Apps</p>
+        <span class="text-lg font-normal leading-8 text-center"
+          >Maximize your growth potential with our powerful integrations, fueled by data-driven insights. Embrace the future of business by leveraging our cutting-edge tools to bring in more data and drive unparalleled growth for your company.
+        </span>
+        <button class="bg-[#2F872D] text-xl rounded-full px-10 py-5 text-white hover-effect">Get Started</button>
+        <img src="./assets/best-apps-image.png" alt="" class="mt-10" />
+      </section>
+
+      <!-- pricing section -->
+      <section id="pricingSection" class="bg-[#0B150F]">
+        <section class="container mx-auto py-50 flex flex-col justify-center items-center text-white">
+          <div>
+            <p class="text-4xl font-semibold leading-12 text-center">Discover Flexible Pricing Options for Our Exceptional Services</p>
+            <span class="text-lg font-normal leading-8 text-center"
+              >we believe in providing top-notch services to cater to your unique requirements. That's why we offer a range of carefully crafted pricing plans designed to suit businesses of all sizes.</span
+            >
+          </div>
+          <div class="mt-10 flex gap-5">
+            <div class="border-2 border-gray-200 rounded-xl p-5">
+              <span>Personal</span>
+              <div class="flex gap-5">
+                <span>$5</span>
+                <span>p/month</span>
+              </div>
+              <div class="flex gap-5">
+                <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+                <p>1 integration</p>
+              </div>
+              <div class="flex gap-5">
+                <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+                <p>Analytics</p>
+              </div>
+              <div class="flex gap-5">
+                <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+                <p>Insights</p>
+              </div>
+              <div class="flex gap-5">
+                <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+                <p>Shared features</p>
+              </div>
+              <div class="flex gap-5">
+                <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+                <p>No custom setting</p>
+              </div>
+            </div>
+            <div class="border-2 border-gray-200 rounded-xl p-5">
+              <span>Professional</span>
+              <div class="flex gap-5">
+                <span>$10</span>
+                <span>p/month</span>
+              </div>
+              <div class="flex gap-5">
+                <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+                <p>1 integration</p>
+              </div>
+              <div class="flex gap-5">
+                <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+                <p>Analytics</p>
+              </div>
+              <div class="flex gap-5">
+                <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+                <p>Insights</p>
+              </div>
+              <div class="flex gap-5">
+                <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+                <p>Shared features</p>
+              </div>
+              <div class="flex gap-5">
+                <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+                <p>No custom setting</p>
+              </div>
+            </div>
+            <div class="border-2 border-gray-200 rounded-xl p-5">
+              <span>Business</span>
+              <div class="flex gap-5">
+                <span>$15</span>
+                <span>p/month</span>
+              </div>
+              <div class="flex gap-5">
+                <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+                <p>1 integration</p>
+              </div>
+              <div class="flex gap-5">
+                <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+                <p>Analytics</p>
+              </div>
+              <div class="flex gap-5">
+                <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+                <p>Insights</p>
+              </div>
+              <div class="flex gap-5">
+                <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+                <p>Shared features</p>
+              </div>
+              <div class="flex gap-5">
+                <i class="fa-solid fa-circle-check text-[#2F872D]"></i>
+                <p>No custom setting</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- blog section -->
+      <section id="blogSection" class="container mx-auto mt-50 flex flex-col">
+        <div class="w-1/2">
+          <span class="text-[#479644] bg-[#EDFFED] rounded-full px-3 text-base font-normal leading-8">Insight & Inspiration</span>
+          <p class="text-4xl font-semibold leading-12">Our Blog</p>
+          <p class="text-lg font-normal leading-8">
+            At EmailGigga, we take immense pride in providing a cutting-edge email marketing solution that empowers businesses to achieve unparalleled success. But don't just take our word for it - listen to what our valued users have to say about
+            their experience with EmailGigga!
+          </p>
+        </div>
+
+        <div class="flex gap-5 mt-20">
+          <div class="flex flex-col gap-5 border-2 border-gray-200 rounded-xl p-5">
+            <img src="./assets/blog-image-1.png" alt="" />
+            <div class="flex justify-between">
+              <span class="text-[#479644] bg-[#EDFFED] rounded-full px-3 text-base font-normal leading-8">Marketing</span>
+              <span>May 19, 2023</span>
+            </div>
+            <p>Crafting Irresistible Subject Lines: The Key to Email Marketing Success</p>
+          </div>
+          <div class="flex flex-col gap-5 border-2 border-gray-200 rounded-xl p-5">
+            <img src="./assets/blog-image-2.png" alt="" />
+            <div class="flex justify-between">
+              <span class="text-[#F29100] bg-[#FDF5E7] rounded-full px-3 text-base font-normal leading-8">Sales</span>
+              <span>May 19, 2023</span>
+            </div>
+            <p>The Power of Personalization: How Tailored Content Drives Email Engagement</p>
+          </div>
+          <div class="flex flex-col gap-5 border-2 border-gray-200 rounded-xl p-5">
+            <img src="./assets/blog-image-3.png" alt="" />
+            <div class="flex justify-between">
+              <span class="text-[#479644] bg-[#EDFFED] rounded-full px-3 text-base font-normal leading-8">Marketing</span>
+              <span>May 19, 2023</span>
+            </div>
+            <p>Automation Unleashed: Streamlining Your Email Marketing with Workflows</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- testimonial section -->
+      <section class="container mx-auto mt-50 flex flex-col gap-10">
+        <div class="flex items-center justify-center flex-col">
+          <span class="text-[#479644] bg-[#EDFFED] rounded-full px-3 text-base font-normal leading-8">Testimonial</span>
+          <p class="text-4xl font-semibold leading-12 text-center">See what people are saying about EmailGigga</p>
+          <span class="text-lg font-normal leading-8 text-center"
+            >At EmailGigga, we take immense pride in providing a cutting-edge email marketing solution that empowers businesses to achieve unparalleled success. But don't just take our word for it - listen to what our valued users have to say about
+            their experience with EmailGigga!</span
+          >
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col gap-5 bg-[#F8F8F8] border-2 border-gray-200 rounded-xl p-5">
+            <span
+              >I have been using [Your Email Marketing Software Name] for over a year now, and I must say it has transformed the way we approach email marketing. The personalization features have allowed us to create tailored campaigns that
+              resonate.</span
+            >
+            <div class="flex gap-5 items-center">
+              <img src="./assets/sarah.png" alt="" class="rounded-full" />
+              <div>
+                <p>Sarah Thompson</p>
+                <span>Marketing Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5 bg-[#F8F8F8] border-2 border-gray-200 rounded-xl p-5">
+            <span> We tried various email marketing platforms before coming across [Your Email Marketing Software Name], and none of them could match the level of personalization and ease of use that this software offers. </span>
+            <div class="flex gap-5 items-center">
+              <img src="./assets/john.png" alt="" class="rounded-full" />
+              <div>
+                <p>John Roberts</p>
+                <span>E-commerce Owner</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5 bg-[#F8F8F8] border-2 border-gray-200 rounded-xl p-5">
+            <span> As a non-profit organization, our resources are limited, but our need to communicate effectively with donors and volunteers is crucial. [Your Email Marketing Software Name] has been a game-changer for us. </span>
+            <div class="flex gap-5 items-center">
+              <img src="./assets/emily.png" alt="" class="rounded-full" />
+              <div>
+                <p>Emily Parker</p>
+                <span>Non-profit Coordinator</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section -->
+      <section id="contactSection" class="container mx-auto mt-50 bg-[#0B150F] rounded-3xl">
+        <div class="flex flex-col justify-center items-center px-30 py-20">
+          <p class="text-4xl font-semibold leading-12 text-center text-white w-3/5">Unlock the Potential of Your Campaigns with Our Intuitive Software</p>
+          <span class="text-base font-normal leading-8 text-center text-white w-3/5">
+            We invite you to embark on this exciting email marketing journey with us. At emailgigga, we believe in a collaborative approach, where our clients become our partners. Together, we can shape a future where mailing possibilities are
+            limitless.
+          </span>
+          <div class="text-white text-center flex gap-6">
+            <button class="bg-[#2F872D] text-xl rounded-full px-10 py-5 text-white hover-effect">Get Started</button>
+            <button class="text-xl border border-gray-200 rounded-full px-10 py-5 text-white hover-effect">Watch Video</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="bg-[#0B150F] flex items-center py-20 mt-40 w-full">
+      <div class="container mx-auto flex flex-col">
+        <div class="flex justify-between items-center">
+          <div class="hover-effect">
+            <a href="#homeSection" class="flex gap-2 justify-between items-center">
+              <img id="" src="./assets/favicon.png" alt="EmailGigga Logo" class="w-10" />
+              <span class="text-lg font-semibold leading-10 text-white">EmailGigga</span>
+            </a>
+          </div>
+
+          <div class="flex flex-col lg:flex-row items-center gap-8">
+            <li class="list-none hover-effect"><a href="#homeSection" class="text-lg font-light leading-8 text-white/70">Home</a></li>
+            <li class="list-none hover-effect"><a href="#pricingSection" class="text-lg font-light leading-8 text-white/70">Pricing</a></li>
+            <li class="list-none hover-effect"><a href="#blogSection" class="text-lg font-light leading-8 text-white/70">Blog</a></li>
+            <li class="list-none hover-effect"><a href="#aboutUsSection" class="text-lg font-light leading-8 text-white/70">About us</a></li>
+            <li class="list-none hover-effect"><a href="#contactSection" class="text-lg font-light leading-8 text-white/70">Contact</a></li>
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <div class="flex flex-col items-end mt-30">
+            <p class="text-sm font-normal leading-8 text-white/70">Follow us</p>
+            <div class="flex items-center gap-5 py-2">
+              <a href="https://facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook text-2xl hover-effect text-white"></i>
+              </a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <i class="fa-brands fa-youtube text-2xl hover-effect text-white"></i>
+              </a>
+              <a href="https://instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram text-2xl hover-effect text-white"></i>
+              </a>
+              <a href="https://github.com/" target="_blank">
+                <i class="fa-brands fa-github text-2xl hover-effect text-white"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center py-4">
+            <hr class="w-full border-gray-600" />
+            <div class="text-base font-normal leading-8 text-white/70 mt-10">EmailGigga &copy 2023</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
