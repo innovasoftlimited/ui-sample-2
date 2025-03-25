@@ -326,6 +326,12 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+  .w-0 {
+    width: calc(var(--spacing) * 0);
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -361,6 +367,9 @@
   }
   .w-4\/7 {
     width: calc(4/7 * 100%);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
   }
   .w-5\/6 {
     width: calc(5/6 * 100%);
@@ -419,8 +428,26 @@
   .w-90 {
     width: calc(var(--spacing) * 90);
   }
+  .w-\[10\%\] {
+    width: 10%;
+  }
+  .w-\[22\%\] {
+    width: 22%;
+  }
+  .w-\[23\%\] {
+    width: 23%;
+  }
+  .w-\[25\%\] {
+    width: 25%;
+  }
+  .w-\[30\%\] {
+    width: 30%;
+  }
   .w-\[50\%\] {
     width: 50%;
+  }
+  .w-auto {
+    width: auto;
   }
   .w-full {
     width: 100%;
@@ -502,6 +529,9 @@
   }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
+  }
+  .gap-50 {
+    gap: calc(var(--spacing) * 50);
   }
   .space-y-2 {
     :where(& > :not(:last-child)) {
@@ -591,6 +621,9 @@
   }
   .bg-\[\#205552\] {
     background-color: #205552;
+  }
+  .bg-\[\#E4EFE3\] {
+    background-color: #E4EFE3;
   }
   .bg-\[\#EC8B66\] {
     background-color: #EC8B66;
